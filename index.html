@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>IP Address Tracker</title>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="header">
+        <h1>IP Address Tracker</h1>
+        <div class="input">
+          <input
+            type="text"
+            id="ip-address__input"
+            placeholder="Search for any IP address or domain"
+          />
+          <label for="ip-address__input"
+            ><img src="images/icon-arrow.svg" alt="Proceed"
+          /></label>
+        </div>
+      </div>
+      <div class="details">
+        <div class="ip-address">
+          <p>IP address</p>
+          <h3>192.212.174.101</h3>
+        </div>
+        <div class="location">
+          <p>Location</p>
+          <h3>Brooklyn, NY,10001</h3>
+        </div>
+        <div class="timezone">
+          <p>Timezone</p>
+          <h3>UTC-05:00</h3>
+        </div>
+        <div class="isp">
+          <p>ISP</p>
+          <h3>SpaceX Starlink</h3>
+        </div>
+      </div>
+      <div class="map" id="map"></div>
+    </div>
+  </body>
+</html>
