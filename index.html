@@ -20,8 +20,23 @@
       rel="stylesheet"
     />
 
+    <!-- Leaflet -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+
     <!-- stylesheet -->
     <link rel="stylesheet" href="css/style.css" />
+    <script defer src="Javascript/script.js" type="module"></script>
 
     <title>IP Address Tracker</title>
   </head>
@@ -35,7 +50,7 @@
             id="ip-address__input"
             placeholder="Search for any IP address or domain"
           />
-          <label for="ip-address__input"
+          <label for="ip-address__input" id="details-btn"
             ><img src="images/icon-arrow.svg" alt="Proceed"
           /></label>
         </div>
@@ -43,19 +58,19 @@
       <div class="details">
         <div class="ip-address">
           <p>IP address</p>
-          <h3>192.212.174.101</h3>
+          <h3 id="ip-address">192.212.174.101</h3>
         </div>
         <div class="location">
           <p>Location</p>
-          <h3>Brooklyn, NY,10001</h3>
+          <h3 id="location">Brooklyn, NY,10001</h3>
         </div>
         <div class="timezone">
           <p>Timezone</p>
-          <h3>UTC-05:00</h3>
+          <h3 id="time">UTC-05:00</h3>
         </div>
         <div class="isp">
           <p>ISP</p>
-          <h3>SpaceX Starlink</h3>
+          <h3 id="provider">SpaceX Starlink</h3>
         </div>
       </div>
       <div class="map" id="map"></div>
